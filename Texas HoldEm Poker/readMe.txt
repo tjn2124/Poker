@@ -22,17 +22,17 @@ positions 999 times.
 Player Class
 
 The user starts with 100 tokens, and the bankroll will adjust
-according to the odds associated with their hand. If they 
-play in the interactive mode the bankroll is adjusted based on their 
+according to the odds associated with their hand. If the user plays
+in the interactive mode, the bankroll is adjusted based on the user's 
 bet. The player class gives the game class access to the bank roll
-and the hand
+and the hand.
 
 ///////////////////
 
 Game Class
 
 The game can be played with or without entering command line arguments.
-To enter a command line argument and test each function, enter the first 
+To enter a command line argument and test each function enter the first 
 letter of the suit you would like to have in your hand followed by a number.
 In the command line version of the play() method, since the user 
 doesn't place a bet, the bankroll only adjusts based on their
@@ -44,12 +44,12 @@ is equal to zero then the loop in the play() method would execute an
 interactive game. The command line prompts the user to enter a bet
 which then adjusts the bankroll from the player class. If the user
 wants to play again the while loop will continue as long as they 
-1 when the command line prompts them at the end of one game. 
+enter 1 when the command line prompts them at the end of one game. 
 
 Both the interactive play() method and the command line version 
 of the play method call checkHand() and use the helper methods 
-to evaluate the hand. The hand is returned to the user as a string 
-along with their bankroll balance and evaluation of the user's hand. 
+to evaluate the player's hand. The hand is returned to the user 
+as a string along with their bankroll balance. 
 
 
 
