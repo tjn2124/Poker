@@ -12,7 +12,9 @@ import java.util.Scanner;
 //need to adjust royal flush
 //need to adjust bank pay out i think..
 
-//this is dealing all, running game, updates player class variables
+//this is dealing, running the game and updating
+//the variables in the player class 
+
 public class Game {
     
     private Player p;
@@ -57,7 +59,8 @@ public class Game {
         int handLength = p.getHand().size();
         this.bet = 0.0;
     }
-	//This allows the user to play a game in the interactive mode by
+	
+    //Allows the user to play a game in the interactive mode by
     //making sure the length of the hand is zero. if the play 
     //again instance variable is set to zero after one round the 
     //program terminates, else the user can opt to play again when
