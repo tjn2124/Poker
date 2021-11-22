@@ -204,7 +204,7 @@ public class Game {
         }
         return yourHand;
     }
-        //calls the flush() method and if thats true 
+        //calls the flush() method and if that's true 
        //checks that the ranks are ordered ace-13
         private boolean royalFlush(){
         boolean royalFlush = false;
@@ -234,9 +234,9 @@ public class Game {
             boolean flush = false;
             int counter = 0;
             for (int i = 0; i < 4; i++){
-                Card card = p.getHand().get(i);//first card
+                Card card = p.getHand().get(i);
                 int rankOne = card.getRank();
-                Card nextCard = p.getHand().get(i+1);//second card
+                Card nextCard = p.getHand().get(i+1);
                 int rankTwo  = nextCard.getRank();
                 if (rankOne+1 == rankTwo){
                     counter++;
@@ -263,7 +263,7 @@ public class Game {
             }
             return straightFlush;
         }
-        //checks if the ranks match the 3 times which 
+        //Checks if the ranks match the 3 times which 
         // is then four of a kind
         private boolean fourOfAKind(){
             boolean fourOfAKind = false;
