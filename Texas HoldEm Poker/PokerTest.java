@@ -1,15 +1,8 @@
 
 
 
-//PokerTest must remain exactly as it is here.
-
-
-
 public class PokerTest{
 
-    // this class must remain unchanged
-    // your code must work with this test class
- 
     public static void main(String[] args){
         if (args.length<1){
             Game g = new Game();
