@@ -1,8 +1,6 @@
 //Creates a player
 //
 //Tiffany Neumann
-//tjn2124
-//
 
 
 import java.util.ArrayList;
@@ -30,16 +28,16 @@ public class Player {
         hand.remove(c);
         }
     
-	// set the instance variable bet to the players bet
-    // adjust bankroll by how much the player bets
+    // set the instance variable bet to the players bet
+    // and adjust bankroll by how much the player bets
     public void bets(double amt){
         bet = amt;
         bankroll = bankroll - amt;
     }
-    //adjust winnings if the player places a bet
-    // And for command line testing
-    // if the player does not bet then just add the
-    //odds associated with thier hand to their bankroll
+    // Adjust winnings if the player places a bet
+    // And in command line testing
+    // if the player does not bet then add the
+    // odds associated with their hand to their bankroll
     public void winnings(double odds){
         if (bet>0){
             bankroll += bet*odds;
@@ -48,10 +46,12 @@ public class Player {
             bankroll+=odds;
         }
     }
+	
     //return current balance of bankroll
     public double getBankroll(){
         return bankroll;
     }
+	
     //returns the hand as an arraylist
     public ArrayList<Card> getHand(){
         return hand;
@@ -69,6 +69,7 @@ public class Player {
     public void sort(){
         Collections.sort(hand);
     }
+	
     //this method clears the hand for a second round
     public void reset(){
         hand.clear();
