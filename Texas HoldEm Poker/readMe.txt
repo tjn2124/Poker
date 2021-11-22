@@ -39,8 +39,8 @@ In the command line version of the play() method, since the user
 doesn't place a bet, the bankroll only adjusts based on their
 starting balance and the odds of the hand that they got.
 
-I used the instance variable HandLength in order to extract the 
-length of the testHand arguments class wide, so that if HandLength
+The instance variable HandLength extracts the length 
+of the testHand arguments class wide, so that if HandLength
 is equal to zero then the loop in the play() method would execute an 
 interactive game. The command line prompts the user to enter a bet
 which then adjusts the bankroll from the player class. If the user
@@ -49,8 +49,8 @@ enter 1 when the command line prompts them at the end of one game.
 
 Both the interactive play() method and the command line version 
 of the play method call checkHand() and use the helper methods 
-to evaluate the player's hand. The hand is returned to the user 
-as a string along with their bankroll balance. 
+to evaluate the player's hand. The evaulation of the hand is
+ returned to the user as a string along with their bankroll balance. 
 
 
 
