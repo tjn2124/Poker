@@ -9,10 +9,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
 
-//need to adjust royal flush
-//need to adjust bank pay out i think..
 
-//this is dealing, running the game and updating
+//Game is dealing, running the game and updating
 //the variables in the player class 
 
 public class Game {
